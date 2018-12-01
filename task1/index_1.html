@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task1</title>
+        <link rel="stylesheet" type="text/css" href="index_1.css" >
+
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>           -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
+<!--        <script type="text/javascript" src="JsBarcode.all.min.js" ></script>-->
+    </head>
+    <body>
+        
+        <form>
+            Virtual bar code:
+            <input type="text" maxlength="54" name="virtualbarcode"  class="virtualbarcode">
+        </form>
+        
+        <button class="decode">Decode</button>
+        <input type="button" class="hide" value="Hide">
+        
+        <div class="container">
+            <div class="input1">
+                <label for="iban">Payee's IBAN:  </label><label id="iban"></label>
+                <br>
+            </div>
+  
+            <div class="input2">
+            <label for="dueamount">Amount to be paid:  </label><label id="dueamount"></label><br>
+            </div>
+            
+            <div class="input3">
+            <label for="reference">Payment reference:  </label><label id="reference"></label><br>
+                </div>
+            
+            <div class="input4">
+            <label for="duedate">Due date: </label>
+            <label id="duedate"></label>
+                </div>
+            
+<!--
+            <div class="barcode">
+                <p>BAR CODE HERE</p>
+                
+            </div>
+-->
+            <img id="barcodeDisplay" src="ash.jpg">
+        </div>
+        <script type="text/javascript" src="JsBarcode.all.min.js"></script>
+        <script type="text/javascript" src="index_1.js"></script>
+    </body>
+</html>

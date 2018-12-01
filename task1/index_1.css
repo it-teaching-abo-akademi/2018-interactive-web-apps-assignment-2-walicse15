@@ -1,0 +1,87 @@
+body{
+    margin: 50px;
+}
+html{
+    font-family: Lucida Sans;
+}
+.decode {
+  background: #c9c9c9;
+  border-radius: 4px;
+  color: #1a181a;
+  font-size: 14px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 50px;
+  margin-left: 135px;
+}
+
+
+.hide {
+  background: #c9c9c9;
+  border-radius: 4px;
+  color: #1a181a;
+  font-size: 14px;
+   max-height: 40px;
+    max-width: 110px;
+    min-height: 40px;
+    min-width: 110px; 
+  margin-left: 1100px;                             margin-bottom: 10px;
+}
+
+.virtualbarcode{
+    width: 33%;
+}
+
+.container{
+    border: 1px solid black;
+    max-height: 500px;
+    max-width: 1200px;
+    min-height: 500px;
+    min-width: 1200px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+#barcodeDisplay{
+        text-align: center;
+    margin-top: 150px;
+    margin-left:220px;
+    border: 1px solid black;
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 800px;
+    min-width: 800px;
+}
+
+#iban{
+    width: 30%;
+    height: 5%;
+}
+
+#dueamount{
+    width: 30%;
+    height: 5%;
+}
+
+#reference{
+    width: 30%;
+    height: 5%;
+}
+
+.input1{
+    
+    float: left;
+}
+
+.input2{
+    margin-left: 548px;
+}
+
+.input3{
+    float: left;
+    margin-top:75px;
+}
+
+.input4{
+    margin-left: 550px;
+    margin-top:75px;
+}
