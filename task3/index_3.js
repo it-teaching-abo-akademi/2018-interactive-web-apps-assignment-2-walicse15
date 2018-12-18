@@ -44,7 +44,7 @@ $(document).ready(function(){
     var buslineoptions = document.getElementById("buslineoptions");
     var userInput = buslineoptions.options[buslineoptions.selectedIndex].value;
     var client1 = new XMLHttpRequest();
-    foli_url_link = "http://data.foli.fi/siri/vm";
+    foli_url_link = "https://data.foli.fi/siri/vm";
     client1.open( "GET", foli_url_link, false ); 
     client1.send();
     data = JSON.parse(client1.responseText);
