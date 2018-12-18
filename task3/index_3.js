@@ -5,6 +5,11 @@ var markers;
 var markerCluster;
 var image = 'bus.png';
 
+$(document).ready(function(){
+				getStations();
+				$('#buslineoptions').change(clearMap);				
+			});
+
 function clearMap(){
 	markerCluster.clearMarkers();
 };
