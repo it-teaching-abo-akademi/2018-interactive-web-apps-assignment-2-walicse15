@@ -22,7 +22,7 @@ search.addEventListener("click",function(){
         countryValue = "DE"
        // alert(countryValue);
     }
-        var apiLINK = "http://api.zippopotam.us/"+countryValue+"/"+zipcode;
+        var apiLINK = "https://api.zippopotam.us/"+countryValue+"/"+zipcode;
    // alert(apiLINK);
         var latitude,longitude,myObj,data;
         var client = new XMLHttpRequest();
