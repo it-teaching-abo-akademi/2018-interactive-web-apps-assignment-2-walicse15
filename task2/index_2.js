@@ -86,7 +86,10 @@ function myMap(latitude,longitude){
 }
 
 function saveData (zipcode,countryName){
+    if (typeof(Storage) == "undefined") {
 
+    }
+    else{
         var historyZipcode = localStorage.getItem("historyZipcode");
         var historyCountry = localStorage.getItem("historyCountry");
         if(historyZipcode==null && historyCountry==null){
@@ -110,6 +113,7 @@ function saveData (zipcode,countryName){
             localStorage.setItem("historyZipcode", newHistoryZIP);
             localStorage.setItem("historyCountry", newHistoryCountry);
         }			
+    }
 }
 
 		
@@ -128,9 +132,7 @@ function updateData (){
         historyCountry = localStorage.getItem("historyCountry");
         historyCountryArray = historyCountry.split('\n');
     }
-	
 
-	
     if(historyZipcode!=null && historyCountry!=null){
         for (var i = 0 ; i < historyZipArray.length; i++) {
                     document.getElementById("history").innerHTML += "<p>"+historyCountryArray[i]+ " - " +historyZipArray[i]+ "\n"+"</p>"
